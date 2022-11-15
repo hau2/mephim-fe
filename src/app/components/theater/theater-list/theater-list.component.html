@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="d-flex align-items-start tab-list theater-list col col-3">
+    <div class="w-100 nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <button class="nav-link" [id]="theater.theaterId" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" *ngFor="let theater of listTheater">{{theater.theaterName}}</button>
+    </div>
+  </div>
+
+  <div class="col col-8">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">2020-10-10</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">2020-10-11</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">2020-10-12</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cumque eveniet id molestias neque pariatur, porro reiciendis similique. Architecto culpa deleniti earum eius et eum id laboriosam molestias natus, nemo nesciunt quia quidem sint temporibus ullam vitae voluptatem. Aliquid cum enim eos esse, ex ipsa labore nisi nulla omnis quos reprehenderit rerum sunt vitae! Adipisci assumenda ea eius nemo nisi porro rerum sunt, ut voluptatem voluptates? Esse fuga quaerat quia quidem quisquam voluptates! Ab aliquid amet culpa cum cupiditate dolor dolore dolorem eos explicabo illum incidunt laborum laudantium minima modi molestiae molestias numquam officia, omnis praesentium quod sapiente sed sit temporibus. Ab, adipisci aliquam architecto assumenda, atque beatae blanditiis consectetur consequatur corporis cum delectus deserunt dolorem eos eveniet explicabo hic id iusto magnam maiores nihil nobis odit omnis pariatur, perferendis placeat porro quaerat quibusdam quis quisquam ratione recusandae repellendus sapiente similique soluta temporibus vitae voluptatibus. A aliquam architecto, cum deleniti eaque enim mollitia nam, nostrum obcaecati perferendis praesentium quia sint voluptate. Aperiam asperiores aut consectetur consequuntur dolore dolores dolorum ea eaque eveniet excepturi explicabo facilis illo impedit itaque libero magnam modi nemo, nihil quasi quis quos sapiente similique, sunt tenetur totam! Ab accusamus architecto, asperiores, aspernatur beatae commodi consectetur corporis cumque delectus deserunt est eveniet fugiat inventore ipsum laboriosam laborum magnam maiores maxime minima nisi nobis non numquam odio omnis porro quaerat, quibusdam quisquam recusandae repellat saepe sit soluta suscipit tenetur unde voluptas voluptatem voluptatum. Ab aut deleniti, eos eum iure laudantium nesciunt nihil sapiente! Animi aperiam aspernatur consequatur cum, deserunt dolor ea eligendi et fugiat impedit, maiores mollitia nesciunt nobis numquam quam recusandae rem temporibus ut vero voluptates. A assumenda atque blanditiis, consequatur culpa cum delectus deleniti dignissimos, doloribus eius illum ipsam ipsum libero necessitatibus obcaecati odit quidem quisquam quo saepe tempore veniam voluptatem voluptates! Accusantium ad animi at autem consectetur consequatur corporis dignissimos distinctio dolore doloribus ea earum eos error, excepturi exercitationem itaque libero magni maiores maxime mollitia nostrum odit, pariatur perferendis quae quia quisquam sed similique sunt suscipit ut vel veniam veritatis vero! Accusantium aut commodi, consequatur dicta dolores ea eos eveniet excepturi expedita explicabo, in inventore ipsum laudantium, maiores maxime minus mollitia nam necessitatibus nisi possimus provident quam quas quis rem reprehenderit repudiandae saepe suscipit tempora vero voluptatibus. A accusantium aliquam debitis deserunt eos, et nesciunt qui sint veniam voluptatibus. A ad animi, at est excepturi, fugiat, laboriosam mollitia necessitatibus neque possimus quo unde ut veniam. Beatae cumque dolores eum impedit magni nam nobis possimus quasi, qui repellendus! Adipisci alias amet aperiam autem cum cumque debitis deserunt dicta dignissimos eveniet fugiat fugit illo illum, in ipsa ipsum, molestiae officia optio pariatur praesentium quas quasi quia quibusdam sunt tempore voluptas voluptatem. Assumenda eius eligendi magnam odit quibusdam, quis ullam? Ad aliquam animi aspernatur at commodi consectetur cum doloremque dolores doloribus earum error est eum excepturi explicabo illum in, itaque minus molestias nemo non pariatur quaerat rem repellat repellendus sequi soluta sunt tempore voluptas voluptate voluptates. Beatae pariatur sit veritatis. Adipisci aliquid aut consequuntur, culpa dolor dolores ducimus ea earum, enim eos esse et eveniet excepturi explicabo fugit ipsam ipsum iusto molestias nam necessitatibus nesciunt non porro possimus quae quaerat qui quod repellat temporibus unde, veritatis. Alias aliquid, amet assumenda aut, corporis cupiditate distinctio doloremque eius enim excepturi exercitationem explicabo facilis fugit illum ipsa labore minima mollitia neque odio odit provident quis quos ratione sequi sint ullam unde voluptas voluptates voluptatibus voluptatum! Distinctio earum, iste minus nostrum numquam placeat ut veritatis! A aperiam debitis distinctio doloremque dolores labore minus, nam neque nesciunt nulla obcaecati perspiciatis quia sapiente vero, voluptas? Cumque debitis dolores eligendi nam nemo obcaecati vel vitae!</div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">..eee.</div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">.www..</div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+        <ul class="nav nav-tabs" id="myTab1" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab1" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">2020-10-10</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab1" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">2020-10-11</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent1">
+          <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab1">efef</div>
+          <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab1">..eee.</div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+    </div>
+  </div>
+</div>
+<div class="show-list col">
+  <app-show-date></app-show-date>
+</div>
