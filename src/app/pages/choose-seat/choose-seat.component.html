@@ -1,0 +1,5 @@
+<h3>Chọn ghế</h3>
+
+<button [ngClass]="{'btn-danger': seat.isBooking===true, 'btn-outline-success': seat.isBooking===false}" class="btn" *ngFor="let seat of listSeat">
+{{seat.seatName}}
+</button>

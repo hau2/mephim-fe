@@ -1,0 +1,8 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation" *ngFor="let showDate of listShowDate">
+    <button class="nav-link active" id="home-tab" (click)="onChooseShowDate(showDate.showDateId)" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">{{showDate.date}}</button>
+  </li>
+</ul>
+<div>
+  <app-movie-ticket-list [showDateId]="showDateIdChoose"></app-movie-ticket-list>
+</div>

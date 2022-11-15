@@ -8,12 +8,16 @@ import {TheaterServiceService} from '../../../services/theater-service.service';
 })
 export class TheaterListComponent implements OnInit {
   listTheater: any = [];
+  theaterChooseId: number;
   constructor(private theaterService: TheaterServiceService) { }
 
   ngOnInit(): void {
-    this.theaterService.findAllTheater().subscribe((data) => {
-      this.listTheater = data;
-    })
+    this.theaterService.findAllTheater().subscribe((res) => {
+      this.listTheater = res;
+    });
   }
 
+  chooseTheater = (theaterId: number) => {
+    this.theaterChooseId = theaterId;
+  }
 }

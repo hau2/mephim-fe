@@ -1,0 +1,11 @@
+
+<div class="list-group">
+  <div class="list-group-item list-group-item-action" aria-current="true" *ngFor="let movie of listMovie">
+    <div class="d-flex w-100 justify-content-between" role="tablist">
+      <h5 class="mb-1">{{movie?.movieName}}</h5>
+      <small>{{movie?.movieDescription}}</small>
+    </div>
+    <app-show-time [movieId]="movie.movieId" [showDateId]="showDateId"></app-show-time>
+    <small>And some small print.</small>
+  </div>
+</div>
